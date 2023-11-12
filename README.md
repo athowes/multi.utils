@@ -15,5 +15,10 @@ For this reason, many of the functions are relatively unlikely to be of great ge
 This disclaimer given, the package can be installed via:
 
 ```r
-devtools::install_github("athowes/multi-agyw")
+devtools::install_github("athowes/multi.utils")
 ```
+
+## Common tasks
+
+* To build the website, use `pkgdown::build_site()`
+* To document functions, use `devtools::document()`
