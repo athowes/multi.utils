@@ -1,3 +1,4 @@
+#' @export
 update_naming <- function(df) {
 
   fct_reorg <- function(fac, ...) {

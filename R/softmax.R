@@ -2,6 +2,7 @@
 #'
 #' @param x A vector.
 #' @return The softmax of `x`
+#' @export
 softmax <- function(x) {
   exp(x) / sum(exp(x))
 }
@@ -10,6 +11,7 @@ softmax <- function(x) {
 #'
 #' @param x A vector.
 #' @return The softmax of `x`
+#' @export
 stable_softmax <- function(x) {
   x <- x - max(x)
   exp(x) / sum(exp(x))

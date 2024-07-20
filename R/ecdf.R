@@ -1,4 +1,5 @@
 #' Calculates the empirical coverage of a vector `x`.
+#' @export
 empirical_coverage <- function(x, nominal_coverage) {
   alpha <- (1 - nominal_coverage)
   y <- (x >= (alpha / 2)) & (x <= 1 - (alpha / 2))
@@ -18,6 +19,7 @@ empirical_coverage <- function(x, nominal_coverage) {
 #' @return List containing the upper and lower simultaneous confidence bands
 #' evaluated at \eqn{z_i = i / K} for \eqn{i = 1, \ldots, K - 1}.
 #' @source https://github.com/TeemuSailynoja/simultaneous-confidence-bands
+#' @export
 get_lims <- function(alpha, n, K) {
   gamma <- adjust_alpha_optimize(alpha, n, K) #' Compute coverage parameter gamma
   lims <- list(
@@ -28,21 +30,23 @@ get_lims <- function(alpha, n, K) {
 
 #' Adjust the alpha level of the envelope test using optimization
 #' @source https://github.com/TeemuSailynoja/simultaneous-confidence-bands
+#' @export
 adjust_alpha_optimize <- function(alpha, N, K) {
   optimize(target_gamma, c(0, alpha), alpha = alpha, N = N, K = K)$minimum
 }
 
 #' @source https://github.com/TeemuSailynoja/simultaneous-confidence-bands
+#' @export
 target_gamma <- function(gamma, alpha, N, K) {
   z <- 1:(K - 1) / K
   z2 <- c(z, 1)
   z1 <- c(0, z)
 
-  #' Pre-compute quantiles and use symmetry for increased efficiency
+  # Pre-compute quantiles and use symmetry for increased efficiency
   x2_lower <- qbinom(gamma / 2, N, z2)
   x2_upper <- c(N - rev(x2_lower)[seq_len(K)[-1]], N)
 
-  #' Compute the total probability of trajectories inside the envelope
+  # Compute the total probability of trajectories inside the envelope
   x1 <- 0
   p_int <- 1
   for (i in seq_along(z1)) {
@@ -58,6 +62,7 @@ target_gamma <- function(gamma, alpha, N, K) {
 
 #' Probability of the ECDF being completely within the envelope as z2
 #' @source https://github.com/TeemuSailynoja/simultaneous-confidence-bands
+#' @export
 p_interior <- function(p_int, x1, x2, z1, z2, gamma, N) {
   z_tilde <- (z2 - z1) / (1 - z1)
 

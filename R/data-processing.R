@@ -4,6 +4,7 @@
 #' @param lower The smallest possible value of `x`.
 #' @param upper The largest possible value of `x`.
 #' @return A vector `x` where values outside the interval are moved inside.
+#' @export
 constrain_interval <- function(x, lower = 0, upper = 1, verbose = TRUE) {
   if(verbose) {
     message(

@@ -1,60 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/adjust_alpha_optimize.html</loc>
-  </url>
-  <url>
-    <loc>/reference/check_sum_to_zero.html</loc>
-  </url>
-  <url>
-    <loc>/reference/constrain_interval.html</loc>
-  </url>
-  <url>
-    <loc>/reference/empirical_coverage.html</loc>
-  </url>
-  <url>
-    <loc>/reference/get_lims.html</loc>
-  </url>
-  <url>
-    <loc>/reference/hello.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/mutate_dummy.html</loc>
-  </url>
-  <url>
-    <loc>/reference/p_interior.html</loc>
-  </url>
-  <url>
-    <loc>/reference/repeat_matrix.html</loc>
-  </url>
-  <url>
-    <loc>/reference/run_commit_push.html</loc>
-  </url>
-  <url>
-    <loc>/reference/softmax.html</loc>
-  </url>
-  <url>
-    <loc>/reference/stable_softmax.html</loc>
-  </url>
-  <url>
-    <loc>/reference/tau_fixed.html</loc>
-  </url>
-  <url>
-    <loc>/reference/tau_pc.html</loc>
-  </url>
-  <url>
-    <loc>/reference/to_int.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/adjust_alpha_optimize.html</loc></url>
+<url><loc>/reference/check_sum_to_zero.html</loc></url>
+<url><loc>/reference/constrain_interval.html</loc></url>
+<url><loc>/reference/empirical_coverage.html</loc></url>
+<url><loc>/reference/get_lims.html</loc></url>
+<url><loc>/reference/hello.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/mutate_dummy.html</loc></url>
+<url><loc>/reference/p_interior.html</loc></url>
+<url><loc>/reference/repeat_matrix.html</loc></url>
+<url><loc>/reference/run_commit_push.html</loc></url>
+<url><loc>/reference/softmax.html</loc></url>
+<url><loc>/reference/stable_softmax.html</loc></url>
+<url><loc>/reference/tau_fixed.html</loc></url>
+<url><loc>/reference/tau_pc.html</loc></url>
+<url><loc>/reference/to_int.html</loc></url>
 </urlset>
+

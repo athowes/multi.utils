@@ -1,7 +1,9 @@
+#' @export
 priority_iso3 <- function() {
   c("BWA", "CMR", "KEN", "LSO", "MOZ", "MWI", "NAM", "SWZ", "TZA", "UGA", "ZAF", "ZMB", "ZWE")
 }
 
+#' @export
 analysis_level <- function() {
   c(
     "BWA" = 3, "CMR" = 2, "KEN" = 2,
@@ -12,6 +14,7 @@ analysis_level <- function() {
   )
 }
 
+#' @export
 admin1_level <- function() {
   c(
     "BWA" = 1, "CMR" = 1, "KEN" = 1,
